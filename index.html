@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Blog Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #242424;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 95%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            flex: 3;
+        }
+
+        article {
+            display: flex;
+            flex-direction: row;
+            flex: 1 1 calc(50% - 20px);
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid rgb(145, 145, 145);
+            position: relative;
+            gap: 20px;
+        }
+
+        .category-type {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #242424;
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        article h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 40%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-container .article-date {
+            font-size: 0.9em;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .text-container {
+            width: 60%;
+            color: #555;
+        }
+
+        article p.article-text {
+            text-align: justify;
+        }
+
+        aside {
+            flex: 1;
+            background-color: #c9c9c9;
+            padding: 10px;
+            margin-left: 20px;
+        }
+
+        .footer-class {
+            display: flex;
+            justify-content: space-between;
+            color: yellow;
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: black;
+            padding: 20px;
+        }
+
+        .footer-inside {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            color: white;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        .footer-inside h4 {
+            color: yellow;
+        }
+
+        .footer-inside a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fashion Zone</h1>
+        <p>The Ultimate Clothing!</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Fashion</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Beauty</a>
+        <a href="#">Culture</a>
+        <a href="#">Entertainment</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2 class="category-type">Fashion</h2>
+                <div class="image-container">
+                    <a href="#">
+                        <img src="img/fashion.png.jpg" alt="Fashion Image">
+                    </a>
+                    <p class="article-date">Published on December 11, 2023 by Fashion</p>
+                </div>
+                <div class="text-container">
+                    <p class="article-text">
+                        Fashion style reflects personal expression, combining clothes, accessories, and attitude. Trends
+                        vary from minimalistic to bold and vintage. Today’s focus on sustainable fashion encourages unique,
+                        eco-friendly choices. Style celebrates individuality, letting everyone showcase their distinct
+                        personality.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h2 class="category-type">Lifestyle</h2>
+                <div class="image-container">
+                <a href="#">
+                    <img src="img/lifestyle.png.jpg" alt="Lifestyle Image">
+                </a>
+                <p class="article-date">Published on December 11, 2023 by Fashion</p>
+                </div>
+                <div class="text-container">
+                <p class="article-text">
+                    Lifestyle encompasses daily habits, choices, and attitudes that define our quality of life. It
+                    includes health, relationships, work-life balance, and personal growth. A mindful, balanced
+                    lifestyle prioritizes well-being and happiness, encouraging us to pursue passions, nurture
+                    relationships, and stay connected to what truly matters.
+                </p>
+                </div>
+            </article>
+
+            <article>
+                <h2 class="category-type">Beauty</h2>
+                <div class="image-container">
+                <a href="#">
+                    <img src="img/beauty.png.jpg" alt="Beauty Image">
+                </a>
+                <p class="article-date">Published on December 10, 2023 by Fashion</p>
+                </div>
+                <div class="text-container">
+                <p class="article-text">
+                    Beauty is more than appearance; it reflects self-expression and confidence. It includes skincare,
+                    makeup, and self-care practices that enhance natural features and boost inner well-being. Embracing
+                    one's unique look and personality celebrates individuality, encouraging confidence and authenticity
+                    in every aspect of life.
+                </p>
+                </div>
+            </article>
+
+            <article>
+                <h2 class="category-type">Culture</h2>
+                <div class="image-container">
+                <a href="#">
+                    <img src="img/culture.png.jpg" alt="Culture Image">
+                </a>
+                <p class="article-date">Published on December 09, 2023 by Fashion</p>
+                </div>
+                <div class="text-container">
+                <p class="article-text">
+                    Indian dressing culture is a vibrant tapestry of tradition and modernity, reflecting the country's
+                    rich heritage. From sarees and lehengas to kurta-pajamas and sherwanis, each attire tells a story.
+                    Colors, fabrics, and intricate embroidery vary across regions, symbolizing identity, festivity, and
+                    cultural values, celebrating the diversity of Indian life.
+                </p>
+                </div>
+            </article>
+
+            <article>
+                <h2 class="category-type">Entertainment</h2>
+                <div class="image-container">
+                <a href="#">
+                    <img src="img/entertainment.png.jpg" alt="Entertainment Image">
+                </a>
+                <p class="article-date">Published on December 08, 2023 by Fashion</p>
+                </div>
+                <div class="text-container">
+                <p class="article-text">
+                    Entertainment encompasses a wide range of activities, including movies, music, dance, and theater.
+                    It serves as a vital escape from daily life, fostering creativity and joy. With the rise of digital
+                    platforms, access to diverse entertainment options has never been easier.
+                </p>
+                </div>
+            </article>
+
+            <article>
+                <h2 class="category-type">Entertainment</h2>
+                <div class="image-container">
+                <a href="#">
+                    <img src="img/entertainment.png.jpg" alt="Entertainment Image">
+                </a>
+                <p class="article-date">Published on December 08, 2023 by Fashion</p>
+                </div>
+                <div class="text-container">
+                <p class="article-text">
+                    Entertainment encompasses a wide range of activities, including movies, music, dance, and theater.
+                    It serves as a vital escape from daily life, fostering creativity and joy. With the rise of digital
+                    platforms, access to diverse entertainment options has never been easier.
+                </p>
+                </div>
+            </article>
+        </main>
+
+        <aside>
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Beauty</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Entertainment</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-class">
+            <div class="footer-inside">
+                <h4>NEED HELP</h4>
+                <a href="#">Contact Us</a>
+                <a href="#">Track Order</a>
+                <a href="#">Return & Refunds</a>
+                <a href="#">FAQs</a>
+                <a href="#">My Account</a>
+            </div>
+            <div class="footer-inside">
+                <h4>COMPANY</h4>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community Initiatives</a>
+                <a href="#">Fashion Army</a>
+            </div>
+            <div class="footer-inside">
+                <h4>MORE INFO</h4>
+                <a href="#">T & C</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Sitemap</a>
+            </div>
+            <div class="footer-inside">
+                <h4>LOCATION</h4>
+                <p>Mewatfashion@gmail.com
+                    <br><br>
+                    Chandoli Stand
+                    <br><br>
+                    Alwar, 301001
+                    <br><br>
+                    Rajasthan, India
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
